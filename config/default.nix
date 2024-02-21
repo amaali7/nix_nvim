@@ -75,6 +75,7 @@ in
     ./options.nix
     ./autocmd.nix
     ./plugins.nix
+    ./sets.nix
   ];
   clipboard.providers.xclip.enable = true;
   extraPlugins = with pkgs.vimPlugins; [

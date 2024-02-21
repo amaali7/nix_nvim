@@ -1,9 +1,4 @@
 {
-  pkgs,
-  lib,
-  config,
-  ...
-}: {
   config = {
     options = {
       # Enable relative line numbers
@@ -47,7 +42,7 @@
       updatetime = 50; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
-      completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
+      completeopt = [ "menuone" "noselect" "noinsert" ]; # mostly just for cmp
 
       # Enable persistent undo history
       swapfile = false;
@@ -132,9 +127,9 @@
         g.neovide_transparency = 0.8
 
         -- Neovide Fonts
-        o.guifont = "MonoLisa Trial:Medium:h15"
+        -- o.guifont = "MonoLisa Trial:Medium:h15"
         -- o.guifont = "CommitMono:Medium:h15"
-        -- o.guifont = "JetBrainsMono Nerd Font:h14:Medium:i"
+        o.guifont = "JetBrainsMono Nerd Font:h14:Medium:i"
         -- o.guifont = "FiraMono Nerd Font:Medium:h14"
         -- o.guifont = "CaskaydiaCove Nerd Font:h14:b:i"
         -- o.guifont = "BlexMono Nerd Font Mono:h14:Medium:i"
