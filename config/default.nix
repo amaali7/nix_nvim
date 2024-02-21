@@ -37,7 +37,16 @@ in
 
     ./ui/alpha.nix
     ./ui/dressing-nvim.nix
+    ./ui/nvim-notify.nix
+    ./ui/noice.nix
+    ./ui/nui.nix
+    ./ui/indent-blankline.nix
 
+    ./utils/better-escape.nix
+    ./utils/flash.nix
+
+
+    ./utils/whichkey.nix
     #./keymaps.nix
     #./options.nix
     #./autocmd.nix

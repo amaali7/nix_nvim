@@ -15,7 +15,7 @@
         expand = "ultisnips";
       };
       formatting = {
-        fields = ["kind" "abbr" "menu"];
+        fields = [ "kind" "abbr" "menu" ];
         expandableIndicator = true;
       };
       window = {
@@ -50,34 +50,34 @@
       ];
 
       mapping = {
-        "<Tab>" = {
-          modes = ["i" "s"];
-          action = ''
-             function(fallback)
-             	if cmp.visible() then
-            		cmp.select_next_item()
-            elseif luasnip.expand_or_jumpable() then
-            	luasnip.expand_or_jump()
-            else
-            fallback()
-                 end
-            end
-          '';
-        };
-        "<S-Tab>" = {
-          modes = ["i" "s"];
-          action = ''
-                 function(fallback)
-            	if cmp.visible() then
-            		cmp.select_prev_item()
-            	elseif luasnip.jumpable(-1) then
-            		luasnip.jump(-1)
-            	else
-            		fallback()
-            	end
-            end
-          '';
-        };
+        # "<Tab>" = {
+        #   modes = ["i" "s"];
+        #   action = ''
+        #      function(fallback)
+        #      	if cmp.visible() then
+        #     		cmp.select_next_item()
+        #     elseif luasnip.expand_or_jumpable() then
+        #     	luasnip.expand_or_jump()
+        #     else
+        #     fallback()
+        #          end
+        #     end
+        #   '';
+        # };
+        # "<S-Tab>" = {
+        #   modes = ["i" "s"];
+        #   action = ''
+        #          function(fallback)
+        #     	if cmp.visible() then
+        #     		cmp.select_prev_item()
+        #     	elseif luasnip.jumpable(-1) then
+        #     		luasnip.jump(-1)
+        #     	else
+        #     		fallback()
+        #     	end
+        #     end
+        #   '';
+        # };
         "<C-j>" = {
           action = "cmp.mapping.select_next_item()";
         };
@@ -104,13 +104,13 @@
         };
       };
     };
-    cmp-nvim-lsp = {enable = true;}; # lsp
-    cmp-buffer = {enable = true;};
-    copilot-cmp = {enable = true;}; # copilot suggestions
-    cmp-path = {enable = true;}; # file system paths
+    cmp-nvim-lsp = { enable = true; }; # lsp
+    cmp-buffer = { enable = true; };
+    copilot-cmp = { enable = true; }; # copilot suggestions
+    cmp-path = { enable = true; }; # file system paths
     cmp-nvim-ultisnips.enable = true;
-    cmp_luasnip = {enable = true;}; # snippets
-    cmp-cmdline = {enable = false;}; # autocomplete for cmdline
+    cmp_luasnip = { enable = true; }; # snippets
+    cmp-cmdline = { enable = false; }; # autocomplete for cmdline
   };
   extraConfigLua = ''
      -- luasnip = require("luasnip")

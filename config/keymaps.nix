@@ -2,10 +2,6 @@
   globals.mapleader = " ";
   keymaps = [
     {
-      action = "<cmd>Telescope live_grep<CR>";
-      key = "<leader>fw";
-    }
-    {
       key = "<leader>lf";
       action = ":Autoformat<CR>";
       options = { silent = true; };
@@ -15,42 +11,6 @@
       action = ":";
     }
     # BufferLines
-    {
-      mode = "n";
-      key = "<Tab>";
-      action = "<cmd>BufferLineCycleNext<cr>";
-      options = {
-        desc = "Cycle to next buffer";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<S-Tab>";
-      action = "<cmd>BufferLineCyclePrev<cr>";
-      options = {
-        desc = "Cycle to previous buffer";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<S-l>";
-      action = "<cmd>BufferLineCycleNext<cr>";
-      options = {
-        desc = "Cycle to next buffer";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<S-h>";
-      action = "<cmd>BufferLineCyclePrev<cr>";
-      options = {
-        desc = "Cycle to previous buffer";
-      };
-    }
-
     {
       mode = "n";
       key = "<leader>bd";
@@ -69,14 +29,14 @@
       };
     }
 
-     {
-       mode = "n";
-       key = "<leader>`";
-       action = "<cmd>e #<cr>";
-       options = {
-         desc = "Switch to Other Buffer";
-       };
-     }
+    {
+      mode = "n";
+      key = "<leader>`";
+      action = "<cmd>e #<cr>";
+      options = {
+        desc = "Switch to Other Buffer";
+      };
+    }
 
     {
       mode = "n";
