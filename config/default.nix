@@ -50,13 +50,25 @@ in
     ./utils/illuminate.nix
     ./utils/markdown-preview.nix
     ./utils/mini.nix
-    ./utils/neocord.nix
+    # ./utils/neocord.nix
     ./utils/neodev.nix
     ./utils/neotest.nix
     ./utils/nvim-autopairs.nix
     ./utils/nvim-colorizer.nix
     ./utils/nvim-surround.nix
     ./utils/oil.nix
+    ./utils/persistence.nix
+    ./utils/plenary.nix
+    ./utils/project-nvim.nix
+    ./utils/sidebar.nix
+    ./utils/todo-comments.nix
+    ./utils/toggleterm.nix
+    ./utils/ultimate-autopair.nix
+    ./utils/undotree.nix
+    ./utils/vim-be-good.nix
+    # ./utils/wakatime.nix
+    ./utils/whichkey.nix
+    ./utils/wilder.nix
 
 
     ./keymaps.nix
