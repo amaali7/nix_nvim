@@ -3,8 +3,6 @@ let
   colorscheme = (import ./colorschemes/decay.nix) { inherit pkgs inputs; }; # import the module directly
   snippets = (import ./snippets/luasnip.nix) { inherit pkgs; }; # import the module directly
   staline = (import ./statusline/staline.nix) { inherit pkgs; }; # import the module directly
-  ui = import ./ui/default.nix;
-  utils = import ./utils/default.nix;
 in
 {
   # Import all your configuration modules here
@@ -34,9 +32,33 @@ in
     snippets
     ./statusline/lualine.nix
     staline
-    ui
-    utils
     ./telescope/telescope.nix
+
+    # UI 
+    ./ui/nui.nix
+    ./ui/alpha.nix
+    ./ui/noice.nix
+    ./ui/nvim-notify.nix
+    ./ui/dressing-nvim.nix
+    ./ui/indent-blankline.nix
+
+    # Utils
+    ./utils/better-escape.nix
+    ./utils/flash.nix
+    ./utils/hardtime.nix
+    ./utils/harpoon.nix
+    ./utils/illuminate.nix
+    ./utils/markdown-preview.nix
+    ./utils/mini.nix
+    ./utils/neocord.nix
+    ./utils/neodev.nix
+    ./utils/neotest.nix
+    ./utils/nvim-autopairs.nix
+    ./utils/nvim-colorizer.nix
+    ./utils/nvim-surround.nix
+    ./utils/oil.nix
+
+
     ./keymaps.nix
     ./options.nix
     ./autocmd.nix
