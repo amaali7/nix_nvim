@@ -3,6 +3,8 @@ let
   colorscheme = (import ./colorschemes/decay.nix) { inherit pkgs inputs; }; # import the module directly
   snippets = (import ./snippets/luasnip.nix) { inherit pkgs; }; # import the module directly
   staline = (import ./statusline/staline.nix) { inherit pkgs; }; # import the module directly
+  ui = import ./ui/default.nix;
+  utils = import ./utils/default.nix;
 in
 {
   # Import all your configuration modules here
@@ -32,25 +34,13 @@ in
     snippets
     ./statusline/lualine.nix
     staline
-
+    ui
+    utils
     ./telescope/telescope.nix
-
-    ./ui/alpha.nix
-    ./ui/dressing-nvim.nix
-    ./ui/nvim-notify.nix
-    ./ui/noice.nix
-    ./ui/nui.nix
-    ./ui/indent-blankline.nix
-
-    ./utils/better-escape.nix
-    ./utils/flash.nix
-
-
-    ./utils/whichkey.nix
-    #./keymaps.nix
-    #./options.nix
-    #./autocmd.nix
-    #./plugins.nix
+    ./keymaps.nix
+    ./options.nix
+    ./autocmd.nix
+    ./plugins.nix
   ];
   clipboard.providers.xclip.enable = true;
   extraPlugins = with pkgs.vimPlugins; [
