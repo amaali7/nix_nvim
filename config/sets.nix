@@ -23,7 +23,7 @@
       incsearch = true;
 
       # Enable text wrap
-      wrap = true;
+      wrap = false;
 
       # Better splitting
       splitbelow = true;
@@ -64,7 +64,7 @@
       foldcolumn = "0";
       foldlevel = 99;
       foldlevelstart = 99;
-      foldenable = true;
+      foldenable = false;
 
       # Always keep 8 lines above/below cursor unless at start/end of file
       scrolloff = 8;
@@ -90,7 +90,7 @@
       ];
 
       # Enable chars list
-      list = true; # Show invisible characters (tabs, eol, ...)
+      list = false; # Show invisible characters (tabs, eol, ...)
       listchars = "eol:↲,tab:|->,lead:·,space: ,trail:•,extends:→,precedes:←,nbsp:␣";
 
       # More space in the neovim command line for displaying messages
@@ -124,7 +124,7 @@
         g.neovide_cursor_vfx_particle_lifetime = 5.0
         g.neovide_cursor_vfx_particle_density = 14.0
         g.neovide_cursor_vfx_particle_speed = 12.0
-        g.neovide_transparency = 0.8
+        g.neovide_transparency = 0.9
 
         -- Neovide Fonts
         -- o.guifont = "MonoLisa Trial:Medium:h15"
