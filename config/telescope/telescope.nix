@@ -5,9 +5,9 @@
       fzf-native = {
         enable = true;
       };
-#      project-nvim = {
-#        enable = true;
-#      };
+      #      project-nvim = {
+      #        enable = true;
+      #      };
       media_files.enable = true;
       ui-select = {
         settings = {
@@ -60,7 +60,7 @@
       };
       "<leader>b" = {
         action = "buffers, {}";
-        desc = "+buffer";
+        desc = "+Buffer";
       };
       "<leader>ff" = {
         action = "find_files, {}";
@@ -149,7 +149,14 @@
         desc = "Projects";
       };
     }
-
+    {
+      mode = "n";
+      key = "<leader>f";
+      action = " ";
+      options = {
+        desc = "+Files";
+      };
+    }
     {
       mode = "n";
       key = "<leader>sd";

@@ -2,13 +2,27 @@
   globals.mapleader = " ";
   keymaps = [
     {
-      key = "<leader>lf";
-      action = ":Autoformat<CR>";
-      options = { silent = true; };
+      key = "<leader>q";
+      action = ":qall<CR>";
+      options = {
+        desc = "Quit all without save";
+        silent = true;
+      };
+    }
+    {
+      key = "<leader>Q";
+      action = ":wqall<CR>";
+      options = {
+        desc = "Save all and quit";
+        silent = true;
+      };
     }
     {
       key = ".";
       action = ":";
+      options = {
+        desc = "Command palette";
+      };
     }
     # BufferLines
     {

@@ -22,7 +22,7 @@
       dap-ui = {
         enable = true;
         floating.mappings = {
-          close = ["<ESC>" "q"];
+          close = [ "<ESC>" "q" ];
         };
       };
       dap-virtual-text = {
@@ -30,15 +30,15 @@
       };
     };
     configurations = {
-     # java = [
-     #   {
-     #     type = "java";
-     #     request = "launch";
-     #     name = "Debug (Attach) - Remote";
-     #     hostName = "127.0.0.1";
-     #     port = 5005;
-     #   }
-     # ];
+      # java = [
+      #   {
+      #     type = "java";
+      #     request = "launch";
+      #     name = "Debug (Attach) - Remote";
+      #     hostName = "127.0.0.1";
+      #     port = 5005;
+      #   }
+      # ];
     };
   };
 
@@ -70,6 +70,15 @@
       options = {
         silent = true;
         desc = "Continue";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>d";
+      action = " ";
+      options = {
+        silent = true;
+        desc = "+Debug";
       };
     }
     {
@@ -210,7 +219,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = [ "n" "v" ];
       key = "<leader>de";
       action = "<cmd>lua require('dapui').eval()<cr>";
       options = {

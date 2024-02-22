@@ -12,7 +12,7 @@
     #   "<leader>t" = " Terminal";
     # };
     window = {
-      border = "none";
+      # border = "none";
       winblend = 0;
     };
   };

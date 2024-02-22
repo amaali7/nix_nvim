@@ -23,7 +23,7 @@
         ''
           function(msg) return msg.lsp_client.name end
         '';
-      ignore = []; # List of LSP servers to ignore
+      ignore = [ ]; # List of LSP servers to ignore
       lsp = {
         progressRingbufSize = 0; # Configure the nvim's LSP progress ring buffer size
       };
@@ -51,11 +51,11 @@
         formatGroupName = ''
           function (group) return tostring (group) end
         ''; # How to format a progress notification group's name
-        overrides = {
-          rust_analyzer = {
-            name = "rust-analyzer";
-          };
-        }; # Override options from the default notification config
+        # overrides = {
+        #   rust_analyzer = {
+        #     name = "rust-analyzer";
+        #   };
+        # }; # Override options from the default notification config
       };
     };
     notification = {

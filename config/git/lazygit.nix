@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   extraPlugins = with pkgs.vimPlugins; [
     lazygit-nvim
   ];
@@ -8,6 +8,15 @@
   '';
 
   keymaps = [
+    {
+      mode = "n";
+      key = "<leader>g";
+      action = " ";
+      options = {
+        desc = "+Git";
+      };
+    }
+
     {
       mode = "n";
       key = "<leader>gg";

@@ -19,12 +19,10 @@
     insertMappings = true;
     closeOnExit = true;
     shell = "zsh";
-    direction = "horizontal"; # 'vertical' | 'horizontal' | 'window' | 'float'
+    direction = "float"; # 'vertical' | 'horizontal' | 'window' | 'float'
     autoScroll = true;
     floatOpts = {
-      border = "single"; # 'single' | 'double' | 'shadow' | 'curved' | ... other options supported by win open
-      width = 80;
-      height = 20;
+      border = "curved"; # 'single' | 'double' | 'shadow' | 'curved' | ... other options supported by win open
       winblend = 0;
     };
     winbar = {

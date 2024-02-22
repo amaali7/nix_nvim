@@ -2,15 +2,15 @@
   plugins = {
     indent-blankline = {
       enable = true;
-      indent = {
-        char = "│"; # "│" or "▎"
-      };
+      #  indent = {
+      #   char = "│"; # "│" or "▎"
+      # };
       scope = {
         enabled = true;
         showStart = true;
       };
       exclude = {
-        buftypes = ["terminal" "nofile"];
+        buftypes = [ "terminal" "nofile" ];
         filetypes = [
           "help"
           "alpha"
