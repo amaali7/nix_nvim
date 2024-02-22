@@ -42,10 +42,10 @@
         };
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
       in {
-#        checks = {
+        checks = {
           # Run `nix flake check .` to verify that your config is not broken
- #         default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
-  #      };
+          default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
+        };
 
         packages = {
           # Lets you run `nix run .` to start nixvim
