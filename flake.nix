@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixvim.url = "github:nix-community/nixvim";
+    nixvim.url = "github:nix-community/nixvim/5870c2e964b5da5bf04b39d540fac49ece1ac143";
     flake-parts.url = "github:hercules-ci/flake-parts";
     decay-vim = {
       url = "github:decaycs/decay.nvim";
